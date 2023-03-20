@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: pink;
+  border-radius: 10px;
+  color: black;
+}
+
+button:hover {
+  background-color: lightpink;
+}
+
+
+input {
+  height: 30px;
+}
+
+.box {
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+}
+
+.button {
+  padding: 10px;
+  color: white;
+  background-color: pink;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: lightpink;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 192, 203, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: lightpink;
+}
+
+.popup .close:hover {
+  color: pink;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .popup {
+    width: 70%;
+  }
+}
+
+.backKapri {
+  text-decoration: none;
+  color: lightpink;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.buttonRules {
+  padding: 5px;
+  color: white;
+  background-color: pink;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size:12px;
+  font-style: italic;
+}
+.buttonRules:hover{
+  background-color: lightpink;
+}

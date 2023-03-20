@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game of Pig</title>
+    <link rel="stylesheet" href="pigStyle.css">
+    <link href="sepra.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+
+  
+    <div class="box">
+        <img src="sepra.png" alt="" style="height: 50px; margin-bottom: -20px;">
+        <a class="button" href="#pop">Enter names</a>
+    </div>
+
+    <h1>The Game of Pig </h1>
+    <a class="buttonRules" href="#popRules">Rules of the game</a>
+
+
+
+    <div>
+        <h2 class="coFirst"><span class="nameFirst">Player1</span>: <span class="playerFirst">0</span>pts</h2>
+        <h2 class="coSeconnd"><span class="nameSeconnd">Player2</span>: <span class="playerSeconnd">0</span>pts</h2>
+    </div>
+
+    <div>
+        <button onclick="rollDice()" style="margin-right: 15px;">Roll</button>
+        <button onclick="holdDice()">Hold</button>
+        <h2>Total: <span class="total">0</span>pts</h2>
+        <h3 class="dice"><img src="dice/0.png" alt=""></h3>
+        <h3 class="winner"></h3>
+    </div>
+
+    <div id="pop" class="overlay">
+        <div class="popup">
+            <h2>Enter names</h2>
+            <a class="close" href="#">&times;</a>
+
+            <input type="text" class="nameOfFirst" value="Player1"> <br> <br>
+            <input type="text" class="nameOfSeconnd" value="Player2"> <br> <br>
+
+            <a href="#"><button onclick="setNames()">Save</button></a>
+        </div>
+    </div>
+
+    <div id="popRules" class="overlay">
+        <div class="popup">
+            <h2>Rules</h2>
+            <a class="close" href="#">&times;</a>
+            <p>Pravila igre "The Game of Pig" su jednostavna.<br>
+                Igra se igra sa dva igrača.<br>
+                Svaki igrač ima jednu kockicu.<br>
+                Igrač baca kockicu i zabeleži rezultat.<br>
+                Ako igrač baci 1, on gubi sve dosadašnje poene iz te runde.<br>
+                Ako baci 2, 3, 4, 5 ili 6, on može da odluči da nastavi sa bacanjem kockice ili da zadrži poene iz te
+                runde.<br>
+                Igrač koji prvi skupi 100 poena pobedjuje.</p>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="pigMain.js"></script>
+
+</html>
